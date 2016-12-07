@@ -200,12 +200,13 @@ for i in range(kd.size):
 # Consider initial conditions as:
 # 
 # $\begin{matrix} 
-# y[0] = 0\\
+# y[0] = 1\\
 # y[1] = 1\\
+# y[2] = 1\\
 # \end{matrix}$
 # 
 
-# In[114]:
+# In[115]:
 
 ##Creación y plot de la respuesta del sistema
 #Me falta comprender los argumentos de la función, 
@@ -235,4 +236,9 @@ def PDControlThirdOrderCar(kp,kd):
     return 
 
 interact(PDControlThirdOrderCar, kp=(0,100,0.1), kd=(0,3,0.1))
+
+
+# In[ ]:
+
+
 
